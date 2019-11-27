@@ -1,0 +1,26 @@
+{
+  "name": "single-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"vue serve main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NorthSeacoder/single-vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NorthSeacoder/single-vue/issues"
+  },
+  "homepage": "https://github.com/NorthSeacoder/single-vue#readme",
+  "dependencies": {
+    "@vue/cli-service-global": "^4.0.5",
+    "base-ui": "0.0.201",
+    "vue": "^2.6.10"
+  }
+}
