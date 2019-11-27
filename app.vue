@@ -1,9 +1,27 @@
 <template>
-    <b-table 
-        :options="TableOptions"
-        :records="list"
-    >
-    </b-table>
+    <div class="container-wide">
+        <b-layout>
+            <div slot="header">
+                <b-nav-top :routes="routes">
+                    <div slot="left">My App</div>
+                </b-nav-top>
+            </div>
+
+            <div slot="content">
+                <div class="center-block">
+                    <b-card size="lg">
+                        <b-table 
+                            :options="TableOptions"
+                            :records="list"
+                            :pagination="{pageNo: 1, pageSize: 10}"
+                        >
+                        </b-table>
+                    </b-card>
+                </div>
+            </div>
+        </b-layout>
+        
+    </div>
 </template>
 
 <script>
@@ -14,7 +32,16 @@ export default {
     data() {
         return {
             TableOptions,
-            list
+            list,
+            routes: [
+                {
+                    name: 'fmLessonRecord',
+                    meta: {
+                        navTitle: 'fmLessonRecord'
+                    },
+
+                }
+            ]
         };
     },
 

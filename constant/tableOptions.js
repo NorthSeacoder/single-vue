@@ -1,4 +1,5 @@
 export default {
+    enableClientPagination :true,
     colDefs: [
         {label: 'ID', field: 'id'},
         {label: '标题', field: 'title'},
