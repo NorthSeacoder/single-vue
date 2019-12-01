@@ -1,22 +1,9 @@
 <template>
     <div class="container-wide">
         <b-layout>
-            <div slot="header">
-                <b-nav-top :routes="routes">
-                    <div slot="left">My App</div>
-                </b-nav-top>
-            </div>
-
             <div slot="content">
                 <div class="center-block">
-                    <b-card size="lg">
-                        <b-table 
-                            :options="TableOptions"
-                            :records="list"
-                            :pagination="{pageNo: 1, pageSize: 10}"
-                        >
-                        </b-table>
-                    </b-card>
+                    <coures/>
                 </div>
             </div>
         </b-layout>
@@ -25,23 +12,15 @@
 </template>
 
 <script>
-import TableOptions from './constant/tableOptions';
-import list from './static/list'
+import Coures from './components/fm-coures';
 export default {
     name: 'App',
+    components: {
+        Coures,
+    },
     data() {
         return {
-            TableOptions,
-            list,
-            routes: [
-                {
-                    name: 'fmLessonRecord',
-                    meta: {
-                        navTitle: 'fmLessonRecord'
-                    },
-
-                }
-            ]
+            
         };
     },
 

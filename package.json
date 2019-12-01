@@ -22,5 +22,9 @@
     "@vue/cli-service-global": "^4.0.5",
     "base-ui": "0.0.201",
     "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0"
   }
 }
