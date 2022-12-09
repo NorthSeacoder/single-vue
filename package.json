@@ -20,7 +20,7 @@
   "homepage": "https://github.com/NorthSeacoder/single-vue#readme",
   "dependencies": {
     "@vue/cli-service-global": "^4.0.5",
-    "base-ui": "0.0.201",
+    "base-ui": "0.0.290",
     "vue": "^2.6.10"
   },
   "devDependencies": {
